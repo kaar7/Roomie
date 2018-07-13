@@ -1,0 +1,26 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand brand-logo" href="#">Roomiee</a>
+    <button class="navbar-toggler" (click)="collapse=!collapse" type="button" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="navbar-collapse" (click)="collapse=true" [hidden]="collapse">
+      <ul class="navbar-nav mr-auto" id="nav-link">
+        <li class="nav-item " [routerLinkActive]="['navactive']" [routerLinkActiveOptions]="{exact:true}">
+          <a class="nav-link" [routerLink]="['/']" >Rent</a>
+        </li>
+        <li class="nav-item" [routerLinkActive]="['navactive']" [routerLinkActiveOptions]="{exact:true}">
+          <a class="nav-link" [routerLink]="['/Room']">Room</a>
+        </li>
+        <li class="nav-item" [routerLinkActive]="['navactive']" [routerLinkActiveOptions]="{exact:true}">
+          <a class="nav-link" [routerLink]="['/Chat']" >Notification</a>
+        </li>
+      </ul>
+      <form class="form-inline">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-info my-2 my-sm-0" type="submit">Search</button>
+      </form>
+    </div>
+  </nav>
+
+  

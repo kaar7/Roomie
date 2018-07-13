@@ -1,0 +1,14 @@
+#nav-link .nav-item .nav-link:hover{
+    border-bottom-style: solid;
+    border-bottom-color: #17a2b8;
+}
+.navactive{
+    border-bottom-style: solid;
+    border-bottom-color: #17a2b8;
+}
+.brand-logo{
+
+    color: #17a2b8;
+    font-size: x-large;
+    font-weight: bolder;
+}
